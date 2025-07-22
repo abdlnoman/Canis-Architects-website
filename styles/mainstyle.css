@@ -117,7 +117,22 @@
 }
   /* responsive media query */
   @media screen and (max-width: 576px){
-    .navbar, .nav-link{
+    .navbar, .nav-link, .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-features{
+        margin-left: 20px;
+    }
+  }
+  /* medium size device */
+  @media screen and (min-width: 576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .team-features{
+        margin: 50px auto;
     }
   }
